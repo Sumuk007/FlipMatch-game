@@ -1,3 +1,3 @@
 # FlipMatch-game
 
-Live Demo - https://sumuk007.github.io/FlipMatch-game/
+Live Demo - https://flipmatch-emoji.netlify.app/
