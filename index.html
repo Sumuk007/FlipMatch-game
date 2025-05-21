@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FlipMatch - Memory Game</title>
+
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="FlipMatch is a neon-themed emoji memory game. Flip cards, match emojis, and beat the clock in this fast-paced cyberpunk puzzle!">
+  <meta name="keywords" content="memory game, flip cards, emoji game, neon game, cyberpunk game, browser game, FlipMatch">
+  <meta name="author" content="Sumuk">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph for Social Sharing -->
+  <meta property="og:title" content="FlipMatch - Neon Memory Game">
+  <meta property="og:description" content="A cyberpunk-style memory game where you flip and match neon emoji cards. Play now!">
+  <meta property="og:image" content="https://yourdomain.com/assets/flipmatch-preview.jpg">
+  <meta property="og:url" content="https://yourdomain.com">
+  <meta property="og:type" content="website">
+
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+  <link rel="manifest" href="assets/site.webmanifest">
+
+  <!-- Fonts & CSS -->
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <h1>FlipMatch</h1>
+  <div id="container">
+    <button id="restart">Restart</button>
+  </div>
+
+  <main>
+    <div class="game-board" id="game-board">
+      <div class="card" data-name="cat"><div class="front">?</div><div class="back">🐱</div></div>
+      <div class="card" data-name="cat"><div class="front">?</div><div class="back">🐱</div></div>
+
+      <div class="card" data-name="dog"><div class="front">?</div><div class="back">🐶</div></div>
+      <div class="card" data-name="dog"><div class="front">?</div><div class="back">🐶</div></div>
+
+      <div class="card" data-name="fox"><div class="front">?</div><div class="back">🦊</div></div>
+      <div class="card" data-name="fox"><div class="front">?</div><div class="back">🦊</div></div>
+
+      <div class="card" data-name="panda"><div class="front">?</div><div class="back">🐼</div></div>
+      <div class="card" data-name="panda"><div class="front">?</div><div class="back">🐼</div></div>
+
+      <div class="card" data-name="rabbit"><div class="front">?</div><div class="back">🐰</div></div>
+      <div class="card" data-name="rabbit"><div class="front">?</div><div class="back">🐰</div></div>
+
+      <div class="card" data-name="tiger"><div class="front">?</div><div class="back">🐯</div></div>
+      <div class="card" data-name="tiger"><div class="front">?</div><div class="back">🐯</div></div>
+
+      <div class="card" data-name="koala"><div class="front">?</div><div class="back">🐨</div></div>
+      <div class="card" data-name="koala"><div class="front">?</div><div class="back">🐨</div></div>
+
+      <div class="card" data-name="lion"><div class="front">?</div><div class="back">🦁</div></div>
+      <div class="card" data-name="lion"><div class="front">?</div><div class="back">🦁</div></div>
+    </div>
+
+    <div class="hide" id="result">
+      <h1>🏆 Victory Unlocked!</h1>
+      <p id="time"></p>
+      <p id="total-moves"></p>
+    </div>
+  </main>
+
+  <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js" integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="script.js"></script>
+</body>
+</html>
